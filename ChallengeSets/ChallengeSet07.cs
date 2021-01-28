@@ -7,7 +7,22 @@ namespace ChallengeSets
     {
         public int CountOfBusinessesWithNegativeNetProfit(List<Business> businesses)
         {
-            throw new NotImplementedException();
+            if(businesses == null || businesses.Count == 0)
+            {
+                return 0;
+            }
+
+            var count = 0;
+
+            foreach(var biz in businesses)
+            {
+                if( (biz.TotalRevenue - biz.TotalExpenses) < 0)
+                {
+                    count++;
+                }
+            }
+
+            return count;
         }
 
         public string GetCommaSeparatedListOfProfitableBusinesses(List<Business> businesses)
