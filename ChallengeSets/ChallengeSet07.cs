@@ -98,8 +98,6 @@ namespace ChallengeSets
             }
 
             return TicTacToeResult.Draw;
-
-
         }
 
         public bool EachArrayInJaggedArrayContainsTargetNumber(int[][] numbers, int targetNumber)
